@@ -1,7 +1,10 @@
+import "./App.css"
+import Sidebar from "./components/Sidebar"
+
 const App = () => {
   return (
-    <div>
-      <h1>Let's build a discord clone</h1>
+    <div className="app">
+      <Sidebar />
     </div>
   )
 }
