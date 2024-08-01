@@ -10,3 +10,5 @@ const App = () => {
 }
 
 export default App
+
+// Stopped at 38:00
