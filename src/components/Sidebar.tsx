@@ -5,6 +5,8 @@ import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined"
 import "./Sidebar.css"
 import SidebarChannel from "./SidebarChannel"
 import CallIcon from "@mui/icons-material/Call"
+import { Avatar } from "@mui/material"
+import { Headset, Mic, Settings } from "@mui/icons-material"
 
 const Sidebar = () => {
   return (
@@ -46,6 +48,18 @@ const Sidebar = () => {
           </div>
         </div>
         {/* Okay to above */}
+        <div className="sidebar__profile">
+          <Avatar src="https://github.com/shadcn.png" />
+          <div className="sidebar__profileInfo">
+            <h3>Muhammad UI</h3>
+            <p>#muhammadui</p>
+          </div>
+          <div className="sidebar__profileIcons">
+            <Mic />
+            <Headset />
+            <Settings />
+          </div>
+        </div>
       </aside>
     </>
   )
