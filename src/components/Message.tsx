@@ -5,11 +5,12 @@ import { Avatar } from "@mui/material"
 const Message = () => {
   return (
     <div className="message">
-      <Avatar />
+      <Avatar src="https://github.com/shadcn.png" />
       <div className="message__info">
         <h4>
           muhammadui
-          <span className="message__timestamp">This is a timestamp</span>
+          {/* <span className="message__timestamp">This is a timestamp</span> */}
+          <span className="message__timestamp">09:53</span>
         </h4>
         <p>This is a message</p>
       </div>

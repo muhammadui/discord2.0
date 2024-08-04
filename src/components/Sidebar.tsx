@@ -26,10 +26,14 @@ const Sidebar = () => {
             <AddIcon className="sidebar__addChannel" />
           </div>
           <div className="sidebar__channelsList">
-            <SidebarChannel id={4} channel={"Youtube"} />
-            <SidebarChannel id={4} channel={"Youtube"} />
-            <SidebarChannel id={4} channel={"Youtube"} />
-            <SidebarChannel id={4} channel={"Youtube"} />
+            <SidebarChannel id="4" channelName="Frontend" />
+            <SidebarChannel id="4" channelName="Backend" />
+            <SidebarChannel id="4" channelName="UI / UX" />
+            <SidebarChannel id="4" channelName="Product Design" />
+            {/* <SidebarChannel id={"4"} channel={"Youtube"} />
+            <SidebarChannel id={"4"} channel={"Youtube"} />
+            <SidebarChannel id={"4"} channel={"Youtube"} />
+            <SidebarChannel id={"4"} channel={"Youtube"} /> */}
           </div>
         </div>
 
