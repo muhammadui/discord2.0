@@ -7,11 +7,19 @@ import {
   EmojiEmotions,
   Gif,
 } from "@mui/icons-material"
+import Message from "./Message"
 const Chat = () => {
   return (
     <section className="chat__section  ">
       <ChatHeader />
-      <div className="chat__messages"></div>
+      <div className="chat__messages">
+        <Message />
+        <Message />
+        <Message />
+        <Message />
+        <Message />
+        <Message />
+      </div>
       <div className="chat__input">
         <AddCircle />
         <form action="">
