@@ -11,7 +11,7 @@ const Sidebar = () => {
     <>
       <aside className="sidebar">
         <div className="sidebar__top">
-          <h3>Clever Programmer</h3>
+          <h3>Discord2.0</h3>
           <ExpandMoreIcon />
         </div>
         <div className="sidebar__channels">
@@ -29,21 +29,20 @@ const Sidebar = () => {
             <SidebarChannel id={4} channel={"Youtube"} />
           </div>
         </div>
-        <div className="">
-          <div className="sidebar__voice">
-            <SignalCellularAltIcon
-              className="sidebar__voiceIcon"
-              fontSize="large"
-            />
-          </div>
-          <div className="sidebar__voiceInfo">
-            <h3>Voice Connected</h3>
-            <p>stream</p>
-          </div>
-          <div className="sidebar__voiceIcons">
-            <InfoOutlinedIcon />
-            <CallIcon />
-          </div>
+
+        <div className="sidebar__voice">
+          <SignalCellularAltIcon
+            className="sidebar__voiceIcon"
+            fontSize="large"
+          />
+        </div>
+        <div className="sidebar__voiceInfo">
+          <h3>Voice Connected</h3>
+          <p>stream</p>
+        </div>
+        <div className="sidebar__voiceIcons">
+          <InfoOutlinedIcon />
+          <CallIcon />
         </div>
       </aside>
     </>
