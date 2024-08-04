@@ -11,7 +11,6 @@ import "./ChatHeader.css"
 const ChatHeader = () => {
   return (
     <div className="chatHeader">
-      <h3>I am the header </h3>
       <div className="chatHeader__left">
         <h3>
           <span className="chatHeader__hash">#</span>Test Channel
