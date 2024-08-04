@@ -14,6 +14,7 @@ const Sidebar = () => {
           <h3>Discord2.0</h3>
           <ExpandMoreIcon />
         </div>
+
         <div className="sidebar__channels">
           <div className="sidebar__channelsHeader">
             <div className="sidebar__header">
@@ -35,15 +36,16 @@ const Sidebar = () => {
             className="sidebar__voiceIcon"
             fontSize="large"
           />
+          <div className="sidebar__voiceInfo">
+            <h3>Voice Connected</h3>
+            <p>stream</p>
+          </div>
+          <div className="sidebar__voiceIcons">
+            <InfoOutlinedIcon />
+            <CallIcon />
+          </div>
         </div>
-        <div className="sidebar__voiceInfo">
-          <h3>Voice Connected</h3>
-          <p>stream</p>
-        </div>
-        <div className="sidebar__voiceIcons">
-          <InfoOutlinedIcon />
-          <CallIcon />
-        </div>
+        {/* Okay to above */}
       </aside>
     </>
   )
