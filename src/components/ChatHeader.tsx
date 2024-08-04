@@ -13,8 +13,7 @@ const ChatHeader = () => {
     <div className="chatHeader">
       <div className="chatHeader__left">
         <h3>
-          {/* <span className="chatHeader__hash">#</span>Test Channel */}
-          <span className="chatHeader__hash">#</span>Frontend Channel
+          <span className="chatHeader__hash">#</span>Test Channel
         </h3>
       </div>
       <div className="chatHeader__right">
