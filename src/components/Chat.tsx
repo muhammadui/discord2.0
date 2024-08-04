@@ -1,7 +1,10 @@
+import ChatHeader from "./ChatHeader"
+
+import "./Chat.css"
 const Chat = () => {
   return (
-    <section className="chat__section">
-      <p>I am the chat screen component</p>
+    <section className="chat__section  ">
+      <ChatHeader />
     </section>
   )
 }
