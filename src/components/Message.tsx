@@ -1,3 +1,5 @@
+import "./Message.css"
+
 import { Avatar } from "@mui/material"
 
 const Message = () => {
