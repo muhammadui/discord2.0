@@ -1,14 +1,16 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { Button } from "@mui/material"
 import "./Login.css"
 import { auth, provider } from "../utils/firebase"
 import { signInWithPopup } from "firebase/auth"
+import { useSelector } from "react-redux"
+import { selectUser } from "../features/userSlice"
 
 const signIn = () => {
   signInWithPopup(auth, provider).catch(error => alert(error.message))
 }
 
-const Login: React.FC = () => {
+const Login = () => {
   return (
     <div className="login">
       <div className="login__logo">

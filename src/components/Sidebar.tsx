@@ -7,8 +7,11 @@ import SidebarChannel from "./SidebarChannel"
 import CallIcon from "@mui/icons-material/Call"
 import { Avatar } from "@mui/material"
 import { Headset, Mic, Settings } from "@mui/icons-material"
-
+import { useSelector } from "react-redux"
+import { selectUser } from "../features/userSlice"
+import { auth } from "../utils/firebase"
 const Sidebar = () => {
+  const user = useSelector(selectUser)
   return (
     <>
       <aside className="sidebar">
@@ -53,10 +56,10 @@ const Sidebar = () => {
         </div>
         {/* Okay to above */}
         <div className="sidebar__profile">
-          <Avatar src="https://github.com/shadcn.png" />
+          <Avatar  src={user.photoURL} />
           <div className="sidebar__profileInfo">
-            <h3>Muhammad UI</h3>
-            <p>#muhammadui</p>
+            <h3>{user.displayName}</h3>
+            <p>#{user.uid.substring(0, 6)}</p>
           </div>
           <div className="sidebar__profileIcons">
             <Mic />
